@@ -1,0 +1,4105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sidiemanufacturer | Precision Die Manufacturer</title>
+
+    <meta name="description"
+        content="Sidiemanufacturer is a precision die manufacturing company providing high-quality dies, tooling and engineering solutions for industrial applications.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        :root {
+
+            --orange: #f47b20;
+            --dark-orange: #d85d08;
+            --black: #17191c;
+            --dark: #22252a;
+            --gray: #6d737a;
+            --light-gray: #f4f5f6;
+            --steel: #e8eaec;
+            --white: #ffffff;
+
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: "Inter", sans-serif;
+
+            color: var(--dark);
+
+            overflow-x: hidden;
+
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-weight: 700;
+
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        img {
+            max-width: 100%;
+        }
+
+
+        .container {
+            max-width: 1320px;
+        }
+
+
+        /* =====================================
+           TOP BAR
+        ====================================== */
+
+        .topbar {
+
+            background: var(--black);
+
+            color: #d8d8d8;
+
+            font-size: 13px;
+
+            padding: 9px 0;
+
+        }
+
+
+        .topbar i {
+
+            color: var(--orange);
+
+            margin-right: 6px;
+
+        }
+
+
+        /* =====================================
+           NAVBAR
+        ====================================== */
+
+        .navbar {
+
+            background: #fff;
+
+            padding: 15px 0;
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .06);
+
+            z-index: 999;
+
+        }
+
+
+        .navbar-brand {
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 32px;
+
+            font-weight: 800;
+
+            color: var(--black);
+
+            letter-spacing: -.5px;
+
+        }
+
+
+        .brand-orange {
+            color: var(--orange);
+        }
+
+
+        .nav-link {
+
+            color: #292d32 !important;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            padding: 12px 15px !important;
+
+            transition: .3s;
+
+        }
+
+
+        .nav-link:hover {
+
+            color: var(--orange) !important;
+
+        }
+
+
+        .nav-btn {
+
+            background: var(--orange);
+
+            color: #fff;
+
+            padding: 12px 23px;
+
+            border-radius: 4px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition: .3s;
+
+        }
+
+
+        .nav-btn:hover {
+
+            background: var(--dark-orange);
+
+            color: #fff;
+
+        }
+
+
+        /* =====================================
+           HERO
+        ====================================== */
+
+        .hero {
+
+            position: relative;
+
+            height: 720px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: center;
+
+            color: #fff;
+
+        }
+
+
+        .hero-video {
+
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            z-index: 0;
+
+        }
+
+
+        .hero-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(10, 12, 15, .94) 0%,
+                    rgba(10, 12, 15, .76) 45%,
+                    rgba(10, 12, 15, .35) 100%
+                );
+
+            z-index: 1;
+
+        }
+
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 760px;
+
+        }
+
+
+        .hero-label {
+
+            display: inline-block;
+
+            background: var(--orange);
+
+            padding: 8px 16px;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            font-weight: 700;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size: clamp(55px, 7vw, 90px);
+
+            line-height: .95;
+
+            text-transform: uppercase;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: var(--orange);
+
+        }
+
+
+        .hero p {
+
+            max-width: 650px;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            color: #e0e0e0;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .btn-orange {
+
+            display: inline-block;
+
+            background: var(--orange);
+
+            color: #fff;
+
+            padding: 15px 28px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: .5px;
+
+            transition: .3s;
+
+            border: 1px solid var(--orange);
+
+        }
+
+
+        .btn-orange:hover {
+
+            background: var(--dark-orange);
+
+            border-color: var(--dark-orange);
+
+            color: #fff;
+
+            transform: translateY(-3px);
+
+        }
+
+
+        .btn-transparent {
+
+            display: inline-block;
+
+            color: #fff;
+
+            border: 1px solid rgba(255,255,255,.6);
+
+            padding: 14px 27px;
+
+            margin-left: 10px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            transition: .3s;
+
+        }
+
+
+        .btn-transparent:hover {
+
+            background: #fff;
+
+            color: var(--black);
+
+        }
+
+
+        .hero-bottom {
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            background: rgba(244,123,32,.95);
+
+            z-index: 3;
+
+        }
+
+
+        .hero-stat {
+
+            padding: 18px;
+
+            border-right: 1px solid rgba(255,255,255,.25);
+
+        }
+
+
+        .hero-stat strong {
+
+            font-family: "Barlow Condensed";
+
+            font-size: 26px;
+
+            display: block;
+
+        }
+
+
+        .hero-stat span {
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================
+           COMMON
+        ====================================== */
+
+        .section-space {
+
+            padding: 90px 0;
+
+        }
+
+
+        .section-title {
+
+            margin-bottom: 50px;
+
+        }
+
+
+        .section-title small {
+
+            color: var(--orange);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 3px;
+
+        }
+
+
+        .section-title h2 {
+
+            font-size: 52px;
+
+            text-transform: uppercase;
+
+            margin-top: 8px;
+
+            line-height: 1;
+
+        }
+
+
+        .section-title p {
+
+            color: var(--gray);
+
+            max-width: 650px;
+
+            line-height: 1.8;
+
+            margin-top: 15px;
+
+        }
+
+
+        /* =====================================
+           ABOUT
+        ====================================== */
+
+        .about-image {
+
+            position: relative;
+
+        }
+
+
+        .about-image img {
+
+            width: 100%;
+
+            height: 520px;
+
+            object-fit: cover;
+
+        }
+
+
+        .experience-box {
+
+            position: absolute;
+
+            right: -20px;
+
+            bottom: 25px;
+
+            background: var(--orange);
+
+            color: #fff;
+
+            padding: 25px 30px;
+
+            min-width: 190px;
+
+        }
+
+
+        .experience-box strong {
+
+            display: block;
+
+            font-family: "Barlow Condensed";
+
+            font-size: 48px;
+
+            line-height: 1;
+
+        }
+
+
+        .about-content {
+
+            padding-left: 30px;
+
+        }
+
+
+        .about-content h2 {
+
+            font-size: 52px;
+
+            text-transform: uppercase;
+
+            line-height: 1;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .about-content h2 span {
+
+            color: var(--orange);
+
+        }
+
+
+        .about-content p {
+
+            color: var(--gray);
+
+            line-height: 1.9;
+
+            font-size: 15px;
+
+        }
+
+
+        .about-points {
+
+            margin-top: 30px;
+
+        }
+
+
+        .about-point {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .about-point i {
+
+            color: var(--orange);
+
+            font-size: 22px;
+
+            margin-top: 2px;
+
+        }
+
+
+        .about-point strong {
+
+            display: block;
+
+            margin-bottom: 4px;
+
+        }
+
+
+        .about-point span {
+
+            color: var(--gray);
+
+            font-size: 13px;
+
+        }
+
+
+        /* =====================================
+           CAPABILITIES
+        ====================================== */
+
+        .capabilities {
+
+            background: var(--light-gray);
+
+        }
+
+
+        .capability-card {
+
+            background: #fff;
+
+            border: 1px solid #e1e3e5;
+
+            padding: 35px 28px;
+
+            height: 100%;
+
+            transition: .35s;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .capability-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 0;
+
+            height: 4px;
+
+            background: var(--orange);
+
+            transition: .35s;
+
+        }
+
+
+        .capability-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+        }
+
+
+        .capability-card:hover::before {
+
+            width: 100%;
+
+        }
+
+
+        .capability-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            background: #fff0e4;
+
+            color: var(--orange);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 27px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .capability-card h3 {
+
+            font-size: 27px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .capability-card p {
+
+            color: var(--gray);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+        }
+
+/* ================================
+   PRODUCTS SECTION
+================================ */
+
+.products-section {
+    background: #f7f7f7;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #f47b20;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.text-orange {
+    color: #f47b20;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.product-img {
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    background: #eee;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.08);
+}
+
+.product-number {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f47b20;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-content {
+    padding: 28px;
+}
+
+.product-category {
+    color: #f47b20;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-content h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 8px 0 12px;
+    color: #222;
+}
+
+.product-content p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.product-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+}
+
+.product-content ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.product-content ul li i {
+    color: #f47b20;
+    margin-right: 8px;
+}
+
+.product-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+    color: #f47b20;
+    gap: 15px;
+}
+
+.btn-orange {
+    background: #f47b20;
+    border: 2px solid #f47b20;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .product-img {
+        height: 220px;
+    }
+
+    .product-content {
+        padding: 22px;
+    }
+
+    .product-content h3 {
+        font-size: 22px;
+    }
+
+}
+        /* =====================================
+           PRODUCTS
+        ====================================== */
+
+        .product-card {
+
+            background: #fff;
+
+            border: 1px solid #ddd;
+
+            overflow: hidden;
+
+            height: 100%;
+
+            transition: .35s;
+
+        }
+
+
+        .product-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 20px 40px rgba(0,0,0,.1);
+
+        }
+
+
+        .product-image {
+
+            height: 280px;
+
+            overflow: hidden;
+
+            position: relative;
+
+        }
+
+
+        .product-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: .5s;
+
+        }
+
+
+        .product-card:hover .product-image img {
+
+            transform: scale(1.07);
+
+        }
+
+
+        .product-number {
+
+            position: absolute;
+
+            top: 15px;
+
+            left: 15px;
+
+            background: var(--orange);
+
+            color: #fff;
+
+            font-size: 12px;
+
+            padding: 6px 10px;
+
+            font-weight: 700;
+
+        }
+
+
+        .product-content {
+
+            padding: 25px;
+
+        }
+
+
+        .product-content small {
+
+            color: var(--orange);
+
+            text-transform: uppercase;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .product-content h3 {
+
+            font-size: 27px;
+
+            margin: 7px 0 10px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .product-content p {
+
+            color: var(--gray);
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .product-link {
+
+            color: var(--orange);
+
+            font-weight: 700;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================
+           PROCESS
+        ====================================== */
+
+        .process-section {
+
+            background: var(--black);
+
+            color: #fff;
+
+        }
+
+
+        .process-section .section-title p {
+
+            color: #aeb1b5;
+
+        }
+
+
+        .process-card {
+
+            position: relative;
+
+            padding: 25px;
+
+            border-left: 1px solid #484b4f;
+
+            height: 100%;
+
+        }
+
+
+        .process-number {
+
+            font-family: "Barlow Condensed";
+
+            color: var(--orange);
+
+            font-size: 55px;
+
+            line-height: 1;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .process-card h3 {
+
+            text-transform: uppercase;
+
+            font-size: 25px;
+
+        }
+
+
+        .process-card p {
+
+            color: #aeb1b5;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================
+           QUALITY
+        ====================================== */
+
+        .quality-image img {
+
+            width: 100%;
+
+            height: 570px;
+
+            object-fit: cover;
+
+        }
+
+
+        .quality-content {
+
+            background: var(--dark);
+
+            color: #fff;
+
+            padding: 60px 50px;
+
+            height: 100%;
+
+        }
+
+
+        .quality-content h2 {
+
+            font-size: 52px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .quality-content h2 span {
+
+            color: var(--orange);
+
+        }
+
+
+        .quality-content p {
+
+            color: #b9bdc1;
+
+            line-height: 1.8;
+
+            font-size: 14px;
+
+        }
+
+
+        .quality-item {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-top: 25px;
+
+        }
+
+
+        .quality-item i {
+
+            color: var(--orange);
+
+            font-size: 22px;
+
+        }
+
+
+        /* =====================================
+           INDUSTRIES
+        ====================================== */
+
+        .industry-card {
+
+            position: relative;
+
+            height: 320px;
+
+            overflow: hidden;
+
+        }
+
+
+        .industry-card img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: .5s;
+
+        }
+
+
+        .industry-card:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+
+        .industry-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background: linear-gradient(
+                transparent 30%,
+                rgba(0,0,0,.9)
+            );
+
+            display: flex;
+
+            align-items: flex-end;
+
+            padding: 25px;
+
+        }
+
+
+        .industry-overlay h3 {
+
+            color: #fff;
+
+            font-size: 29px;
+
+            text-transform: uppercase;
+
+            margin: 0;
+
+        }
+
+
+        /* =====================================
+           STATS
+        ====================================== */
+
+        .stats-section {
+
+            background:
+                linear-gradient(
+                    rgba(244,123,32,.94),
+                    rgba(216,93,8,.94)
+                ),
+                url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+
+            background-position: center;
+
+            color: #fff;
+
+        }
+
+
+        .stat-box {
+
+            text-align: center;
+
+            padding: 20px;
+
+            border-right: 1px solid rgba(255,255,255,.3);
+
+        }
+
+
+        .stat-box strong {
+
+            display: block;
+
+            font-family: "Barlow Condensed";
+
+            font-size: 65px;
+
+            line-height: 1;
+
+        }
+
+
+        .stat-box span {
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================
+           WHY US
+        ====================================== */
+
+        .why-card {
+
+            padding: 35px;
+
+            background: #fff;
+
+            border: 1px solid #e2e2e2;
+
+            height: 100%;
+
+        }
+
+
+        .why-card i {
+
+            color: var(--orange);
+
+            font-size: 32px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .why-card h3 {
+
+            font-size: 27px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .why-card p {
+
+            color: var(--gray);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================
+           CTA
+        ====================================== */
+
+        .cta {
+
+            background: var(--orange);
+
+            color: #fff;
+
+            padding: 70px 0;
+
+        }
+
+
+        .cta h2 {
+
+            font-size: 55px;
+
+            text-transform: uppercase;
+
+            line-height: 1;
+
+        }
+
+
+        .cta p {
+
+            max-width: 650px;
+
+            color: #fff1e7;
+
+            line-height: 1.8;
+
+        }
+
+
+        .cta-btn {
+
+            background: #fff;
+
+            color: var(--dark);
+
+            display: inline-block;
+
+            padding: 15px 30px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            font-size: 13px;
+
+            transition: .3s;
+
+        }
+
+
+        .cta-btn:hover {
+
+            background: var(--black);
+
+            color: #fff;
+
+        }
+
+
+        /* =====================================
+           TESTIMONIAL
+        ====================================== */
+
+        .testimonial {
+
+            padding: 35px;
+
+            background: #fff;
+
+            border: 1px solid #e3e3e3;
+
+            height: 100%;
+
+        }
+
+
+        .testimonial .quote {
+
+            color: var(--orange);
+
+            font-size: 35px;
+
+        }
+
+
+        .testimonial p {
+
+            color: var(--gray);
+
+            line-height: 1.9;
+
+            font-size: 14px;
+
+            margin: 15px 0 25px;
+
+        }
+
+
+        .client {
+
+            font-weight: 700;
+
+        }
+
+
+        .client span {
+
+            display: block;
+
+            color: var(--orange);
+
+            font-size: 11px;
+
+            margin-top: 3px;
+
+        }
+
+
+        /* =====================================
+           FAQ
+        ====================================== */
+
+        .accordion-item {
+
+            border: 0;
+
+            border-bottom: 1px solid #ddd;
+
+        }
+
+
+        .accordion-button {
+
+            font-family: "Barlow Condensed";
+
+            font-size: 22px;
+
+            font-weight: 600;
+
+            padding: 22px 5px;
+
+            box-shadow: none !important;
+
+        }
+
+
+        .accordion-button:not(.collapsed) {
+
+            color: var(--orange);
+
+            background: transparent;
+
+        }
+
+
+        .accordion-body {
+
+            color: var(--gray);
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+            padding: 0 5px 25px;
+
+        }
+
+
+        /* =====================================
+           FOOTER
+        ====================================== */
+
+        footer {
+
+            background: #15171a;
+
+            color: #fff;
+
+            padding: 75px 0 25px;
+
+        }
+
+
+        .footer-brand {
+
+            font-family: "Barlow Condensed";
+
+            font-size: 34px;
+
+            font-weight: 800;
+
+        }
+
+
+        .footer-brand span {
+
+            color: var(--orange);
+
+        }
+
+
+        footer p {
+
+            color: #92979c;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+        }
+
+
+        footer h5 {
+
+            text-transform: uppercase;
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        footer ul {
+
+            list-style: none;
+
+            padding: 0;
+
+        }
+
+
+        footer li {
+
+            margin-bottom: 10px;
+
+        }
+
+
+        footer li a {
+
+            color: #92979c;
+
+            font-size: 13px;
+
+            transition: .3s;
+
+        }
+
+
+        footer li a:hover {
+
+            color: var(--orange);
+
+        }
+
+
+        .footer-contact i {
+
+            color: var(--orange);
+
+            width: 20px;
+
+        }
+
+
+        .social a {
+
+            width: 38px;
+
+            height: 38px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid #45484c;
+
+            color: #fff;
+
+            margin-right: 5px;
+
+            transition: .3s;
+
+        }
+
+
+        .social a:hover {
+
+            background: var(--orange);
+
+            border-color: var(--orange);
+
+        }
+
+
+        .footer-bottom {
+
+            border-top: 1px solid #303337;
+
+            margin-top: 50px;
+
+            padding-top: 20px;
+
+            color: #777d82;
+
+            font-size: 12px;
+
+        }
+
+
+        /* =====================================
+           SCROLL ANIMATION
+        ====================================== */
+
+        .reveal {
+
+            opacity: 0;
+
+            transform: translateY(35px);
+
+            transition: all .8s ease;
+
+        }
+
+
+        .reveal.active {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+
+        /* =====================================
+           RESPONSIVE
+        ====================================== */
+
+        @media(max-width:991px) {
+
+            .navbar-nav {
+
+                margin-top: 15px;
+
+            }
+
+
+            .hero {
+
+                height: 680px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 60px;
+
+            }
+
+
+            .about-content {
+
+                padding-left: 0;
+
+                margin-top: 50px;
+
+            }
+
+
+            .quality-content {
+
+                padding: 45px 30px;
+
+            }
+
+
+            .stat-box {
+
+                border-right: 0;
+
+                border-bottom: 1px solid rgba(255,255,255,.3);
+
+            }
+
+        }
+
+
+        @media(max-width:767px) {
+
+            .topbar .text-end {
+
+                text-align: left !important;
+
+                margin-top: 5px;
+
+            }
+
+
+            .section-space {
+
+                padding: 65px 0;
+
+            }
+
+
+            .section-title h2 {
+
+                font-size: 40px;
+
+            }
+
+
+            .hero {
+
+                height: 700px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 52px;
+
+            }
+
+
+            .hero p {
+
+                font-size: 14px;
+
+            }
+
+
+            .btn-transparent {
+
+                margin-left: 0;
+
+                margin-top: 10px;
+
+            }
+
+
+            .hero-bottom {
+
+                display: none;
+
+            }
+
+
+            .about-image img {
+
+                height: 400px;
+
+            }
+
+
+            .experience-box {
+
+                right: 10px;
+
+            }
+
+
+            .about-content h2 {
+
+                font-size: 42px;
+
+            }
+
+
+            .quality-image img {
+
+                height: 350px;
+
+            }
+
+
+            .quality-content h2 {
+
+                font-size: 42px;
+
+            }
+
+
+            .cta h2 {
+
+                font-size: 42px;
+
+            }
+
+
+            .stat-box strong {
+
+                font-size: 50px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         TOP BAR
+    ========================================== -->
+
+    <div class="topbar">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Precision Die Manufacturing & Engineering Solutions
+
+                </div>
+
+                <div class="col-md-6 text-end">
+
+                    <i class="fa-solid fa-envelope"></i>
+                    sales@sidiemanufacturer.com
+
+                    &nbsp;&nbsp;
+
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+
+                SIDE<span class="brand-orange">IE</span>
+                MANUFACTURER
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Process</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#industries">Industries</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quality">Quality</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+
+                        <a href="#contact" class="nav-btn">
+
+                            SEND ENQUIRY
+
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         HERO VIDEO
+    ========================================== -->
+
+    <section class="hero">
+
+        <video class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85">
+
+            <!-- Replace with your own manufacturing video -->
+
+            <source src="img/manufacturing-video.mp4"
+                type="video/mp4">
+
+        </video>
+
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="container">
+
+            <div class="hero-content reveal">
+
+                <span class="hero-label">
+                    Precision Engineering
+                </span>
+
+
+                <h1>
+
+                    Precision Dies.<br>
+
+                    <span>Powerful Production.</span>
+
+                </h1>
+
+
+                <p>
+
+                    Sidiemanufacturer delivers precision-engineered
+                    dies and tooling solutions designed for accuracy,
+                    durability and consistent industrial production.
+
+                </p>
+
+
+                <a href="#products" class="btn-orange">
+
+                    Explore Products
+
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                </a>
+
+
+                <a href="#contact" class="btn-transparent">
+
+                    Get A Quote
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-bottom">
+
+            <div class="container">
+
+                <div class="row text-center">
+
+                    <div class="col-md-3 hero-stat">
+
+                        <strong>Precision</strong>
+
+                        <span>Engineered Dies</span>
+
+                    </div>
+
+
+                    <div class="col-md-3 hero-stat">
+
+                        <strong>Advanced</strong>
+
+                        <span>Manufacturing</span>
+
+                    </div>
+
+
+                    <div class="col-md-3 hero-stat">
+
+                        <strong>Reliable</strong>
+
+                        <span>Quality Control</span>
+
+                    </div>
+
+
+                    <div class="col-md-3 hero-stat">
+
+                        <strong>On Time</strong>
+
+                        <span>Project Delivery</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+    ========================================== -->
+
+    <section class="section-space" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6 reveal">
+
+                    <div class="about-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1000&q=85"
+                            alt="Die manufacturing">
+
+                        <div class="experience-box">
+
+                            <strong>PRECISION</strong>
+
+                            <span>
+                                Built For Industry
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 reveal">
+
+                    <div class="about-content">
+
+                        <small class="text-uppercase"
+                            style="color:#f47b20;font-weight:800;letter-spacing:3px;">
+
+                            About Sidiemanufacturer
+
+                        </small>
+
+
+                        <h2>
+
+                            Engineering
+
+                            <span>Built To Perform.</span>
+
+                        </h2>
+
+
+                        <p>
+
+                            Sidiemanufacturer is focused on delivering
+                            precision die manufacturing and tooling
+                            solutions for demanding industrial
+                            applications.
+
+                        </p>
+
+
+                        <p>
+
+                            From design and material selection to
+                            machining, finishing and inspection,
+                            every stage of production is carried out
+                            with attention to dimensional accuracy,
+                            durability and repeatability.
+
+                        </p>
+
+
+                        <div class="about-points">
+
+
+                            <div class="about-point">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Precision Manufacturing
+                                    </strong>
+
+                                    <span>
+                                        Designed for accurate and
+                                        repeatable industrial production.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="about-point">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Engineering Support
+                                    </strong>
+
+                                    <span>
+                                        Technical support from concept
+                                        to finished tooling.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="about-point">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Consistent Quality
+                                    </strong>
+
+                                    <span>
+                                        Inspection-focused manufacturing
+                                        for dependable performance.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CAPABILITIES
+    ========================================== -->
+
+    <section class="section-space capabilities">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>Our Capabilities</small>
+
+                <h2>
+                    Manufacturing Expertise
+                </h2>
+
+                <p>
+                    Our capabilities cover the major stages required
+                    to develop, manufacture and finish precision
+                    industrial dies and tooling.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+
+                            <i class="fa-solid fa-compass-drafting"></i>
+
+                        </div>
+
+                        <h3>Die Design</h3>
+
+                        <p>
+
+                            Detailed engineering and tooling design
+                            focused on application requirements,
+                            dimensional accuracy and production
+                            efficiency.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+
+                            <i class="fa-solid fa-gears"></i>
+
+                        </div>
+
+                        <h3>Machining</h3>
+
+                        <p>
+
+                            Precision machining processes for
+                            producing complex components and
+                            accurate tooling surfaces.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+
+                            <i class="fa-solid fa-industry"></i>
+
+                        </div>
+
+                        <h3>Tool Making</h3>
+
+                        <p>
+
+                            Production of durable dies and tooling
+                            engineered for demanding manufacturing
+                            environments.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+
+                            <i class="fa-solid fa-microscope"></i>
+
+                        </div>
+
+                        <h3>Inspection</h3>
+
+                        <p>
+
+                            Dimensional and visual inspection
+                            throughout the manufacturing process
+                            to maintain consistent quality.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Products Section Start -->
+<section class="products-section py-5" id="products">
+    <div class="container py-lg-5">
+
+        <!-- Section Heading -->
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <span class="section-tag">
+                    <i class="fas fa-cogs me-2"></i> OUR PRODUCTS
+                </span>
+
+                <h2 class="display-5 fw-bold mt-3">
+                    Precision <span class="text-orange">Manufacturing Products</span>
+                </h2>
+
+                <p class="text-muted mt-3">
+                    We manufacture high-quality dies, moulds, tools, and precision
+                    components designed for durability, accuracy, and consistent
+                    industrial performance.
+                </p>
+            </div>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card h-100">
+
+                    <div class="product-img">
+                        <img src="img/products/die-1.jpg"
+                             alt="Industrial Die Manufacturing"
+                             class="img-fluid">
+
+                        <span class="product-number">01</span>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">
+                            Precision Dies
+                        </span>
+
+                        <h3>Industrial Dies</h3>
+
+                        <p>
+                            Precision-engineered industrial dies manufactured
+                            for high production accuracy and long service life.
+                        </p>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> High Precision</li>
+                            <li><i class="fas fa-check"></i> Durable Construction</li>
+                            <li><i class="fas fa-check"></i> Custom Designs</li>
+                        </ul>
+
+                        <a href="#contact" class="product-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card h-100">
+
+                    <div class="product-img">
+                        <img src="img/products/press-die.jpg"
+                             alt="Press Die Manufacturing"
+                             class="img-fluid">
+
+                        <span class="product-number">02</span>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">
+                            Press Tools
+                        </span>
+
+                        <h3>Press Dies</h3>
+
+                        <p>
+                            Custom press dies designed for accurate forming,
+                            punching, cutting, and sheet metal applications.
+                        </p>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Accurate Forming</li>
+                            <li><i class="fas fa-check"></i> Heavy-Duty Build</li>
+                            <li><i class="fas fa-check"></i> Custom Tooling</li>
+                        </ul>
+
+                        <a href="#contact" class="product-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card h-100">
+
+                    <div class="product-img">
+                        <img src="img/products/mould.jpg"
+                             alt="Industrial Mould Manufacturing"
+                             class="img-fluid">
+
+                        <span class="product-number">03</span>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">
+                            Industrial Moulds
+                        </span>
+
+                        <h3>Precision Moulds</h3>
+
+                        <p>
+                            Precision moulds developed according to customer
+                            drawings, dimensions, materials, and production needs.
+                        </p>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Complex Geometry</li>
+                            <li><i class="fas fa-check"></i> Tight Tolerances</li>
+                            <li><i class="fas fa-check"></i> Long Tool Life</li>
+                        </ul>
+
+                        <a href="#contact" class="product-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card h-100">
+
+                    <div class="product-img">
+                        <img src="img/products/die-casting.jpg"
+                             alt="Die Casting Tool Manufacturing"
+                             class="img-fluid">
+
+                        <span class="product-number">04</span>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">
+                            Die Casting
+                        </span>
+
+                        <h3>Die Casting Dies</h3>
+
+                        <p>
+                            Robust die casting tooling engineered for repeatable
+                            production and excellent dimensional consistency.
+                        </p>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> High Strength</li>
+                            <li><i class="fas fa-check"></i> Dimensional Accuracy</li>
+                            <li><i class="fas fa-check"></i> Production Ready</li>
+                        </ul>
+
+                        <a href="#contact" class="product-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card h-100">
+
+                    <div class="product-img">
+                        <img src="img/products/jig-fixture.jpg"
+                             alt="Jigs and Fixtures Manufacturing"
+                             class="img-fluid">
+
+                        <span class="product-number">05</span>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">
+                            Tooling Solutions
+                        </span>
+
+                        <h3>Jigs & Fixtures</h3>
+
+                        <p>
+                            Application-specific jigs and fixtures developed to
+                            improve production accuracy, repeatability, and efficiency.
+                        </p>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Custom Built</li>
+                            <li><i class="fas fa-check"></i> Production Accuracy</li>
+                            <li><i class="fas fa-check"></i> Easy Operation</li>
+                        </ul>
+
+                        <a href="#contact" class="product-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card h-100">
+
+                    <div class="product-img">
+                        <img src="img/products/custom-tooling.jpg"
+                             alt="Custom Tooling Manufacturing"
+                             class="img-fluid">
+
+                        <span class="product-number">06</span>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">
+                            Custom Manufacturing
+                        </span>
+
+                        <h3>Custom Tooling</h3>
+
+                        <p>
+                            Special-purpose tooling manufactured according to
+                            technical drawings, samples, prototypes, and requirements.
+                        </p>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Drawing Based</li>
+                            <li><i class="fas fa-check"></i> Prototype Support</li>
+                            <li><i class="fas fa-check"></i> Custom Engineering</li>
+                        </ul>
+
+                        <a href="#contact" class="product-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="text-center mt-5">
+            <p class="mb-3">
+                Looking for a custom die or precision tooling solution?
+            </p>
+
+            <a href="#contact" class="btn btn-orange px-4 py-3">
+                Discuss Your Requirement
+                <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- Products Section End -->
+
+    <!-- =========================================
+         PRODUCTS
+    ========================================== -->
+
+    <section class="section-space" id="products">
+
+        <div class="container">
+
+            <div class="section-title text-center reveal">
+
+                <small>Our Products</small>
+
+                <h2>
+                    Precision Die Solutions
+                </h2>
+
+                <p class="mx-auto">
+
+                    Explore our range of industrial die and tooling
+                    solutions designed for different production
+                    requirements.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-number">
+                                01
+                            </span>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85"
+                                alt="Press Die">
+
+                        </div>
+
+                        <div class="product-content">
+
+                            <small>Industrial Dies</small>
+
+                            <h3>
+                                Press Dies
+                            </h3>
+
+                            <p>
+
+                                Precision press dies engineered for
+                                reliable forming, stamping and sheet
+                                metal production applications.
+
+                            </p>
+
+                            <a href="#" class="product-link">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-number">
+                                02
+                            </span>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85"
+                                alt="Progressive Die">
+
+                        </div>
+
+                        <div class="product-content">
+
+                            <small>High Production</small>
+
+                            <h3>
+                                Progressive Dies
+                            </h3>
+
+                            <p>
+
+                                Multi-stage tooling solutions designed
+                                for efficient, repeatable production
+                                of complex components.
+
+                            </p>
+
+                            <a href="#" class="product-link">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-number">
+                                03
+                            </span>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=900&q=85"
+                                alt="Tooling">
+
+                        </div>
+
+                        <div class="product-content">
+
+                            <small>Custom Solutions</small>
+
+                            <h3>
+                                Custom Dies
+                            </h3>
+
+                            <p>
+
+                                Application-specific dies and tooling
+                                developed according to customer
+                                drawings and production requirements.
+
+                            </p>
+
+                            <a href="#" class="product-link">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PROCESS
+    ========================================== -->
+
+    <section class="section-space process-section" id="process">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>
+                    Manufacturing Process
+                </small>
+
+                <h2>
+                    From Concept To Production
+                </h2>
+
+                <p>
+
+                    A structured manufacturing workflow helps us
+                    maintain accuracy and consistency throughout
+                    every project.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-0">
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Requirement
+                        </h3>
+
+                        <p>
+
+                            Understanding component drawings,
+                            materials, production volume and
+                            application requirements.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Design
+                        </h3>
+
+                        <p>
+
+                            Developing the die concept and tooling
+                            design based on manufacturing and
+                            performance requirements.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Manufacturing
+                        </h3>
+
+                        <p>
+
+                            Precision machining, fitting and
+                            assembly of components using controlled
+                            manufacturing processes.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Inspection
+                        </h3>
+
+                        <p>
+
+                            Final dimensional checks and functional
+                            verification before the tooling reaches
+                            production.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         QUALITY
+    ========================================== -->
+
+    <section class="section-space" id="quality">
+
+        <div class="container">
+
+            <div class="row g-0 align-items-stretch">
+
+
+                <div class="col-lg-6 quality-image reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1000&q=85"
+                        alt="Quality manufacturing">
+
+                </div>
+
+
+                <div class="col-lg-6 reveal">
+
+                    <div class="quality-content">
+
+                        <small
+                            style="color:#f47b20;letter-spacing:3px;font-weight:800;">
+
+                            QUALITY FIRST
+
+                        </small>
+
+
+                        <h2>
+
+                            Built For
+
+                            <span>Accuracy.</span>
+
+                        </h2>
+
+
+                        <p>
+
+                            Quality is integrated into our manufacturing
+                            process rather than treated as a final
+                            inspection step.
+
+                        </p>
+
+
+                        <div class="quality-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+
+                                <strong>
+                                    Material Selection
+                                </strong>
+
+                                <p>
+                                    Appropriate tooling materials
+                                    selected according to application
+                                    and expected production conditions.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quality-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+
+                                <strong>
+                                    Dimensional Accuracy
+                                </strong>
+
+                                <p>
+                                    Critical dimensions are checked
+                                    during manufacturing and final
+                                    inspection.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quality-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+
+                                <strong>
+                                    Production Reliability
+                                </strong>
+
+                                <p>
+                                    Tooling is developed with durability,
+                                    repeatability and maintenance in mind.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         INDUSTRIES
+    ========================================== -->
+
+    <section class="section-space bg-light" id="industries">
+
+        <div class="container">
+
+            <div class="section-title text-center reveal">
+
+                <small>
+                    Industries We Serve
+                </small>
+
+                <h2>
+                    Engineered For Industry
+                </h2>
+
+                <p class="mx-auto">
+
+                    Our die manufacturing solutions can be adapted
+                    to a wide range of industrial production
+                    environments.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="industry-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=700&q=85"
+                            alt="Automotive">
+
+                        <div class="industry-overlay">
+
+                            <h3>
+                                Automotive
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="industry-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=700&q=85"
+                            alt="Engineering">
+
+                        <div class="industry-overlay">
+
+                            <h3>
+                                Engineering
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="industry-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=85"
+                            alt="Electrical">
+
+                        <div class="industry-overlay">
+
+                            <h3>
+                                Electrical
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="industry-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1581092335397-9fa73b8b2b4b?auto=format&fit=crop&w=700&q=85"
+                            alt="Industrial">
+
+                        <div class="industry-overlay">
+
+                            <h3>
+                                Industrial
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         STATS
+    ========================================== -->
+
+    <section class="section-space stats-section">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-lg-3 col-6 reveal">
+
+                    <div class="stat-box">
+
+                        <strong class="counter">
+                            15+
+                        </strong>
+
+                        <span>
+                            Years Experience
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-6 reveal">
+
+                    <div class="stat-box">
+
+                        <strong class="counter">
+                            500+
+                        </strong>
+
+                        <span>
+                            Dies Delivered
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-6 reveal">
+
+                    <div class="stat-box">
+
+                        <strong class="counter">
+                            50+
+                        </strong>
+
+                        <span>
+                            Industrial Clients
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-6 reveal">
+
+                    <div class="stat-box">
+
+                        <strong class="counter">
+                            98%
+                        </strong>
+
+                        <span>
+                            Quality Focus
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHY CHOOSE US
+    ========================================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="section-title text-center reveal">
+
+                <small>
+                    Why Choose Us
+                </small>
+
+                <h2>
+                    Manufacturing With Purpose
+                </h2>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-card">
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                        <h3>
+                            Precision
+                        </h3>
+
+                        <p>
+
+                            Focused manufacturing processes help
+                            deliver accurate and repeatable tooling.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-card">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <h3>
+                            Durability
+                        </h3>
+
+                        <p>
+
+                            Tooling is developed with practical
+                            production requirements and service life
+                            in mind.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-card">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h3>
+                            Delivery
+                        </h3>
+
+                        <p>
+
+                            Structured planning and production
+                            management help keep projects moving
+                            toward delivery.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-card">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <p>
+
+                            Technical communication and support
+                            throughout the tooling development
+                            process.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CTA
+    ========================================== -->
+
+    <section class="cta" id="contact">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Have A Die
+                        Manufacturing Requirement?
+                    </h2>
+
+                    <p>
+
+                        Share your component drawing, specifications
+                        or production requirements with our team.
+                        We can discuss the appropriate tooling
+                        approach for your application.
+
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <a href="mailto:sales@sidiemanufacturer.com"
+                        class="cta-btn">
+
+                        Send Your Requirement
+
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TESTIMONIALS
+    ========================================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="section-title text-center reveal">
+
+                <small>
+                    Client Feedback
+                </small>
+
+                <h2>
+                    What Our Clients Say
+                </h2>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 reveal">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p>
+
+                            The tooling quality and attention to
+                            dimensional details helped us maintain
+                            consistent production performance.
+
+                        </p>
+
+                        <div class="client">
+
+                            Production Manager
+
+                            <span>
+                                Automotive Industry
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 reveal">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p>
+
+                            Their engineering team understood our
+                            requirement and worked closely with us
+                            during the development process.
+
+                        </p>
+
+                        <div class="client">
+
+                            Purchase Manager
+
+                            <span>
+                                Engineering Industry
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 reveal">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p>
+
+                            A professional approach from initial
+                            discussion through manufacturing and
+                            final inspection.
+
+                        </p>
+
+                        <div class="client">
+
+                            Operations Head
+
+                            <span>
+                                Industrial Manufacturing
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FAQ
+    ========================================== -->
+
+    <section class="section-space bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+
+                    <div class="section-title text-center reveal">
+
+                        <small>
+                            FAQ
+                        </small>
+
+                        <h2>
+                            Frequently Asked Questions
+                        </h2>
+
+                    </div>
+
+
+                    <div class="accordion" id="faq">
+
+
+                        <div class="accordion-item reveal">
+
+                            <h2 class="accordion-header">
+
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+
+                                    What type of dies do you manufacture?
+
+                                </button>
+
+                            </h2>
+
+
+                            <div id="faq1"
+                                class="accordion-collapse collapse show"
+                                data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+
+                                    We manufacture industrial tooling
+                                    solutions including press dies,
+                                    progressive dies and customized
+                                    dies based on customer drawings
+                                    and production requirements.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="accordion-item reveal">
+
+                            <h2 class="accordion-header">
+
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+
+                                    Can you manufacture custom dies?
+
+                                </button>
+
+                            </h2>
+
+
+                            <div id="faq2"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+
+                                    Yes. Custom tooling can be developed
+                                    according to component drawings,
+                                    material requirements and production
+                                    specifications.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="accordion-item reveal">
+
+                            <h2 class="accordion-header">
+
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+
+                                    How do I send my die requirement?
+
+                                </button>
+
+                            </h2>
+
+
+                            <div id="faq3"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+
+                                    You can contact our team with your
+                                    component drawing, CAD file,
+                                    specifications or production
+                                    requirements. Our team can then
+                                    discuss the tooling requirements.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="accordion-item reveal">
+
+                            <h2 class="accordion-header">
+
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+
+                                    Do you provide engineering support?
+
+                                </button>
+
+                            </h2>
+
+
+                            <div id="faq4"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+
+                                    Yes. Engineering support can be
+                                    provided during requirement
+                                    understanding, die development
+                                    and manufacturing stages.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-4">
+
+                    <div class="footer-brand">
+
+                        SIDE<span>IE</span>
+                        MANUFACTURER
+
+                    </div>
+
+                    <p class="mt-4">
+
+                        Precision die manufacturing and tooling
+                        solutions for industrial applications.
+                        Built around accuracy, reliability and
+                        practical engineering.
+
+                    </p>
+
+
+                    <div class="social mt-4">
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-2 col-md-4">
+
+                    <h5>
+                        Company
+                    </h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#about">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#quality">
+                                Quality
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#process">
+                                Manufacturing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#industries">
+                                Industries
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-4">
+
+                    <h5>
+                        Products
+                    </h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#products">
+                                Press Dies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#products">
+                                Progressive Dies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#products">
+                                Custom Dies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#products">
+                                Industrial Tooling
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#products">
+                                Engineering Solutions
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-4 footer-contact">
+
+                    <h5>
+                        Contact
+                    </h5>
+
+                    <p>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Industrial Area, India
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        +91 98765 43210
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        sales@sidiemanufacturer.com
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        Mon - Sat: 9:00 AM - 6:00 PM
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom text-center">
+
+                © 2026 Sidiemanufacturer. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+        /* =================================
+           SCROLL REVEAL
+        ================================= */
+
+        const reveals =
+            document.querySelectorAll(".reveal");
+
+
+        function revealOnScroll() {
+
+            reveals.forEach(element => {
+
+                const elementTop =
+                    element.getBoundingClientRect().top;
+
+                const windowHeight =
+                    window.innerHeight;
+
+
+                if (elementTop < windowHeight - 80) {
+
+                    element.classList.add("active");
+
+                }
+
+            });
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            revealOnScroll
+        );
+
+
+        window.addEventListener(
+            "load",
+            revealOnScroll
+        );
+
+
+
+        /* =================================
+           SMOOTH SCROLL
+        ================================= */
+
+        document.querySelectorAll(
+            'a[href^="#"]'
+        ).forEach(anchor => {
+
+            anchor.addEventListener(
+                "click",
+                function (e) {
+
+                    const target =
+                        document.querySelector(
+                            this.getAttribute("href")
+                        );
+
+
+                    if (target) {
+
+                        e.preventDefault();
+
+                        target.scrollIntoView({
+
+                            behavior: "smooth",
+
+                            block: "start"
+
+                        });
+
+                    }
+
+                }
+            );
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

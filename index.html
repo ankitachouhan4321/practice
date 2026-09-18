@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ankita Beauty | Premium Cosmetics & Skincare</title>
+
+    <meta name="description"
+        content="Discover premium cosmetics, skincare and beauty essentials crafted to make every day feel beautiful.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        :root {
+            --pink: #e94f87;
+            --dark-pink: #c9366c;
+            --light-pink: #fff0f5;
+            --cream: #fffaf7;
+            --purple: #8c5bb5;
+            --dark: #292027;
+            --text: #655b62;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Playfair Display", serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 1320px;
+        }
+
+        /* =========================
+           ANNOUNCEMENT
+        ========================= */
+
+        .announcement {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 13px;
+            letter-spacing: .5px;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            padding: 18px 0;
+            background: rgba(255,255,255,.96);
+            box-shadow: 0 5px 25px rgba(0,0,0,.04);
+            z-index: 999;
+        }
+
+        .navbar-brand {
+            font-family: "Playfair Display", serif;
+            font-size: 29px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo-mark {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e94f87, #a35cc7);
+            color: #fff;
+            font-family: "Playfair Display", serif;
+            font-size: 27px;
+            font-style: italic;
+            margin-right: 8px;
+            box-shadow: 0 8px 20px rgba(233,79,135,.25);
+        }
+
+        .navbar-nav {
+            gap: 8px;
+        }
+
+        .nav-link {
+            color: #40363d !important;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 15px !important;
+        }
+
+        .nav-link:hover {
+            color: var(--pink) !important;
+        }
+
+        .nav-icons a {
+            color: var(--dark);
+            font-size: 18px;
+            margin-left: 17px;
+            transition: .3s;
+        }
+
+        .nav-icons a:hover {
+            color: var(--pink);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 680px;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 85% 30%, #ffd5e4 0, transparent 25%),
+                radial-gradient(circle at 10% 80%, #eadcff 0, transparent 30%),
+                linear-gradient(120deg, #fff5f8, #fff);
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-small {
+            color: var(--pink);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 6vw, 82px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--pink);
+            font-style: italic;
+        }
+
+        .hero p {
+            max-width: 550px;
+            color: var(--text);
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn-main {
+            background: var(--pink);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            transition: .3s;
+            box-shadow: 0 10px 25px rgba(233,79,135,.25);
+        }
+
+        .btn-main:hover {
+            background: var(--dark-pink);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid #d8cbd0;
+            color: var(--dark);
+            padding: 13px 27px;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin-left: 10px;
+            transition: .3s;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--pink);
+            color: var(--pink);
+        }
+
+        .hero-product {
+            position: relative;
+            text-align: center;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .hero-product img {
+            width: 85%;
+            max-width: 570px;
+            border-radius: 50%;
+            box-shadow: 0 30px 80px rgba(126,68,98,.18);
+        }
+
+        .floating-card {
+            position: absolute;
+            right: 0;
+            bottom: 45px;
+            background: #fff;
+            padding: 16px 20px;
+            border-radius: 18px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.1);
+            text-align: left;
+            animation: float2 4s ease-in-out infinite;
+        }
+
+        .floating-card strong {
+            display: block;
+            color: var(--pink);
+        }
+
+        @keyframes float {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes float2 {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        /* =========================
+           COMMON SECTION
+        ========================= */
+
+        .section-space {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title small {
+            color: var(--pink);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .section-title h2 {
+            font-size: 45px;
+            margin-top: 10px;
+        }
+
+        .section-title p {
+            color: var(--text);
+            max-width: 600px;
+            margin: 15px auto 0;
+        }
+
+        /* =========================
+           CATEGORIES
+        ========================= */
+
+        .category-card {
+            position: relative;
+            border-radius: 25px;
+            overflow: hidden;
+            min-height: 330px;
+            background: var(--light-pink);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .category-content {
+            position: absolute;
+            left: 25px;
+            bottom: 25px;
+            background: rgba(255,255,255,.92);
+            padding: 16px 20px;
+            border-radius: 15px;
+            min-width: 160px;
+        }
+
+        .category-content h4 {
+            margin-bottom: 3px;
+        }
+
+        .category-content a {
+            color: var(--pink);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .product-card {
+            border: 0;
+            border-radius: 22px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 10px 35px rgba(48,28,38,.07);
+            transition: .4s;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(48,28,38,.12);
+        }
+
+        .product-image {
+            position: relative;
+            background: #fff3f7;
+            padding: 25px;
+            height: 330px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: var(--pink);
+            color: #fff;
+            font-size: 11px;
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-weight: 700;
+        }
+
+        .product-wishlist {
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            background: #fff;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+        }
+
+        .product-body {
+            padding: 23px;
+        }
+
+        .product-body small {
+            color: #a88f9c;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .product-body h4 {
+            font-size: 20px;
+            margin: 7px 0;
+        }
+
+        .rating {
+            color: #f5a623;
+            font-size: 13px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--pink);
+        }
+
+        .old-price {
+            color: #aaa;
+            text-decoration: line-through;
+            font-size: 13px;
+            margin-left: 7px;
+        }
+
+        /* =========================
+           PROMO
+        ========================= */
+
+        .promo {
+            background: linear-gradient(110deg, #e94f87, #9d62bd);
+            border-radius: 35px;
+            overflow: hidden;
+            color: #fff;
+            position: relative;
+        }
+
+        .promo-content {
+            padding: 70px;
+        }
+
+        .promo h2 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .promo p {
+            max-width: 500px;
+            opacity: .9;
+            line-height: 1.8;
+        }
+
+        .promo img {
+            width: 100%;
+            height: 100%;
+            min-height: 360px;
+            object-fit: cover;
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--pink);
+            border-radius: 50px;
+            padding: 13px 27px;
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        /* =========================
+           WHY US
+        ========================= */
+
+        .why-box {
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 22px;
+            transition: .3s;
+        }
+
+        .why-box:hover {
+            background: #fff5f8;
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: #fff0f5;
+            color: var(--pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 20px;
+        }
+
+        .why-box p {
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           INGREDIENTS
+        ========================= */
+
+        .ingredient-section {
+            background: #fff8f3;
+        }
+
+        .ingredient-img {
+            border-radius: 30px;
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+        }
+
+        .ingredient-list {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .ingredient-list li {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .ingredient-list i {
+            color: var(--pink);
+            font-size: 22px;
+        }
+
+        .ingredient-list strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .ingredient-list span {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        /* =========================
+           TESTIMONIAL
+        ========================= */
+
+        .testimonial {
+            background: #fff;
+            border-radius: 25px;
+            padding: 35px;
+            box-shadow: 0 10px 35px rgba(0,0,0,.06);
+            height: 100%;
+        }
+
+        .testimonial .quote {
+            color: var(--pink);
+            font-size: 30px;
+        }
+
+        .testimonial p {
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 14px;
+            margin: 15px 0 25px;
+        }
+
+        .customer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .customer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* =========================
+           INSTAGRAM
+        ========================= */
+
+        .insta-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+        }
+
+        .insta-card img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            transition: .4s;
+        }
+
+        .insta-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .insta-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(233,79,135,.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 25px;
+            opacity: 0;
+            transition: .3s;
+        }
+
+        .insta-card:hover .insta-overlay {
+            opacity: 1;
+        }
+
+        /* =========================
+           NEWSLETTER
+        ========================= */
+
+        .newsletter {
+            background: #fff0f5;
+            border-radius: 30px;
+            padding: 60px 30px;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            font-size: 42px;
+        }
+
+        .newsletter p {
+            color: var(--text);
+            margin: 15px auto 25px;
+        }
+
+        .newsletter-form {
+            max-width: 550px;
+            margin: auto;
+            display: flex;
+            background: #fff;
+            padding: 6px;
+            border-radius: 50px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            border: 0;
+            outline: 0;
+            padding: 12px 20px;
+            border-radius: 50px;
+        }
+
+        .newsletter-form button {
+            border: 0;
+            background: var(--pink);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #281f25;
+            color: #fff;
+            padding: 75px 0 25px;
+            margin-top: 80px;
+        }
+
+        footer .brand {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        footer p {
+            color: #bdb2b8;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        footer h5 {
+            margin-bottom: 20px;
+        }
+
+        footer ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            color: #bdb2b8;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        footer ul li a:hover {
+            color: #fff;
+        }
+
+        .social a {
+            width: 38px;
+            height: 38px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid #554950;
+            color: #fff;
+            margin-right: 7px;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            background: var(--pink);
+            border-color: var(--pink);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #433940;
+            margin-top: 50px;
+            padding-top: 20px;
+            color: #988c93;
+            font-size: 13px;
+        }
+
+        /* =========================
+           ANIMATION
+        ========================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all .8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width:991px) {
+
+            .navbar-nav {
+                margin-top: 20px;
+            }
+
+            .nav-icons {
+                margin-top: 15px;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+
+            .hero-product {
+                margin-top: 50px;
+            }
+
+            .promo-content {
+                padding: 45px 30px;
+            }
+
+            .promo h2 {
+                font-size: 40px;
+            }
+
+        }
+
+        @media(max-width:767px) {
+
+            .section-space {
+                padding: 65px 0;
+            }
+
+            .section-title h2 {
+                font-size: 36px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+
+            .hero-product img {
+                width: 95%;
+            }
+
+            .floating-card {
+                right: 5px;
+                bottom: 10px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                background: transparent;
+                gap: 10px;
+            }
+
+            .newsletter-form input {
+                width: 100%;
+                background: #fff;
+            }
+
+            .newsletter-form button {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         ANNOUNCEMENT
+    ========================== -->
+
+    <div class="announcement">
+        ✨ Free Shipping on Orders Above ₹999 &nbsp; | &nbsp; Use Code: BEAUTY10
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <span class="logo-mark">A</span>
+                Ankita
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Collections</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ingredients">Ingredients</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="nav-icons">
+
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-content reveal">
+
+                    <div class="hero-small">
+                        Beauty made beautifully
+                    </div>
+
+                    <h1>
+                        Your Skin.<br>
+                        Your <span>Glow.</span>
+                    </h1>
+
+                    <p>
+                        Discover thoughtfully crafted skincare and beauty
+                        essentials designed to make your natural beauty
+                        shine every single day.
+                    </p>
+
+                    <a href="#shop" class="btn-main">
+                        Shop Collection
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+
+                    <a href="#categories" class="btn-outline">
+                        Explore Beauty
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="hero-product">
+
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85"
+                            alt="Cosmetics">
+
+                        <div class="floating-card">
+
+                            <small>Our Bestseller</small>
+
+                            <strong>Radiance Serum</strong>
+
+                            <span>★★★★★</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================== -->
+
+    <section class="section-space" id="categories">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>Explore Beauty</small>
+
+                <h2>Shop By Category</h2>
+
+                <p>
+                    Everything you need for your daily beauty ritual,
+                    from skincare to makeup essentials.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="category-card">
+
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=700&q=80"
+                            alt="Skincare">
+
+                        <div class="category-content">
+
+                            <h4>Skincare</h4>
+
+                            <a href="#">
+                                Shop Now →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="category-card">
+
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80"
+                            alt="Makeup">
+
+                        <div class="category-content">
+
+                            <h4>Makeup</h4>
+
+                            <a href="#">
+                                Shop Now →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="category-card">
+
+                        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=700&q=80"
+                            alt="Lip Care">
+
+                        <div class="category-content">
+
+                            <h4>Lip Care</h4>
+
+                            <a href="#">
+                                Shop Now →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="category-card">
+
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=80"
+                            alt="Body Care">
+
+                        <div class="category-content">
+
+                            <h4>Body Care</h4>
+
+                            <a href="#">
+                                Shop Now →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED PRODUCTS
+    ========================== -->
+
+    <section class="section-space bg-light" id="shop">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>Our Favourites</small>
+
+                <h2>Featured Products</h2>
+
+                <p>
+                    Beauty essentials loved by thousands of women.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- Product 1 -->
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-tag">
+                                BESTSELLER
+                            </span>
+
+                            <span class="product-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80"
+                                alt="Face Serum">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Skincare</small>
+
+                            <h4>Glow Boost Serum</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹799
+                                </span>
+
+                                <span class="old-price">
+                                    ₹999
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-tag">
+                                NEW
+                            </span>
+
+                            <span class="product-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80"
+                                alt="Lipstick">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Makeup</small>
+
+                            <h4>Velvet Matte Lip</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹599
+                                </span>
+
+                                <span class="old-price">
+                                    ₹749
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+
+                            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=700&q=80"
+                                alt="Face Cream">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Moisturizer</small>
+
+                            <h4>Cloud Soft Cream</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹699
+                                </span>
+
+                                <span class="old-price">
+                                    ₹899
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 4 -->
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-tag">
+                                20% OFF
+                            </span>
+
+                            <span class="product-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+
+                            <img src="https://images.unsplash.com/photo-1611930022142-1b4e5e2c9b9c?auto=format&fit=crop&w=700&q=80"
+                                alt="Beauty Product">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Body Care</small>
+
+                            <h4>Rose Body Butter</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹649
+                                </span>
+
+                                <span class="old-price">
+                                    ₹799
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROMOTIONAL BANNER
+    ========================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="promo">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <div class="promo-content">
+
+                            <small>
+                                LIMITED TIME OFFER
+                            </small>
+
+                            <h2>
+                                Glow More.<br>
+                                Spend Less.
+                            </h2>
+
+                            <p>
+                                Get up to 30% off on selected skincare
+                                essentials and create your perfect
+                                everyday beauty routine.
+                            </p>
+
+                            <a href="#" class="btn-white">
+                                Shop The Sale →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=85"
+                            alt="Beauty Collection">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>Why Ankita</small>
+
+                <h2>Beauty You Can Believe In</h2>
+
+                <p>
+                    Thoughtful formulas, beautiful textures and
+                    skincare made for real everyday routines.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-box">
+
+                        <div class="why-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <h4>Clean Ingredients</h4>
+
+                        <p>
+                            Carefully selected ingredients for
+                            beautiful and healthy-looking skin.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-box">
+
+                        <div class="why-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+
+                        <h4>Thoughtfully Crafted</h4>
+
+                        <p>
+                            Modern beauty formulations created
+                            with care and attention to detail.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-box">
+
+                        <div class="why-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <h4>Cruelty Free</h4>
+
+                        <p>
+                            Beauty that feels good and aligns
+                            with conscious choices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 reveal">
+
+                    <div class="why-box">
+
+                        <div class="why-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+
+                        <h4>Fast Delivery</h4>
+
+                        <p>
+                            Beautiful products delivered safely
+                            to your doorstep.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INGREDIENTS
+    ========================== -->
+
+    <section class="section-space ingredient-section" id="ingredients">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 reveal">
+
+                    <img class="ingredient-img"
+                        src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85"
+                        alt="Natural skincare">
+
+                </div>
+
+                <div class="col-lg-6 reveal">
+
+                    <small style="color:#e94f87;font-weight:700;letter-spacing:3px;">
+                        BEAUTY FROM NATURE
+                    </small>
+
+                    <h2 style="font-size:48px;margin-top:12px;">
+                        Ingredients That
+                        Love Your Skin
+                    </h2>
+
+                    <p style="color:#655b62;line-height:1.8;">
+                        We believe beauty starts with ingredients
+                        you can understand. Our formulations combine
+                        modern skincare science with carefully selected
+                        botanical ingredients.
+                    </p>
+
+                    <ul class="ingredient-list">
+
+                        <li>
+
+                            <i class="fa-solid fa-check-circle"></i>
+
+                            <div>
+
+                                <strong>Vitamin C</strong>
+
+                                <span>
+                                    Helps support brighter,
+                                    healthier-looking skin.
+                                </span>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-check-circle"></i>
+
+                            <div>
+
+                                <strong>Hyaluronic Acid</strong>
+
+                                <span>
+                                    Provides lightweight hydration
+                                    for a plump-looking complexion.
+                                </span>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-check-circle"></i>
+
+                            <div>
+
+                                <strong>Rose Extract</strong>
+
+                                <span>
+                                    A soothing botanical ingredient
+                                    for a fresh beauty ritual.
+                                </span>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="btn-main">
+                        Discover Ingredients
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BEST SELLERS
+    ========================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>Customer Favourites</small>
+
+                <h2>Best Sellers</h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=800&q=80"
+                                alt="Skincare set">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Skincare Set</small>
+
+                            <h4>The Glow Ritual</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹1,499
+                                </span>
+
+                                <span class="old-price">
+                                    ₹1,999
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
+                                alt="Makeup collection">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Makeup</small>
+
+                            <h4>Everyday Glam Kit</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹1,299
+                                </span>
+
+                                <span class="old-price">
+                                    ₹1,699
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 reveal">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80"
+                                alt="Body care">
+
+                        </div>
+
+                        <div class="product-body">
+
+                            <small>Body Care</small>
+
+                            <h4>Rose Luxury Collection</h4>
+
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="price">
+                                    ₹999
+                                </span>
+
+                                <span class="old-price">
+                                    ₹1,299
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
+
+    <section class="section-space bg-light" id="reviews">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>Real Reviews</small>
+
+                <h2>Loved By Our Community</h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 reveal">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p>
+                            The Glow Boost Serum has completely changed
+                            my skincare routine. My skin feels hydrated
+                            and looks so fresh.
+                        </p>
+
+                        <div class="customer">
+
+                            <img src="https://i.pravatar.cc/100?img=47"
+                                alt="Customer">
+
+                            <div>
+                                <strong>Riya Sharma</strong>
+
+                                <div class="rating">
+                                    ★★★★★
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 reveal">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p>
+                            Beautiful packaging, amazing texture and
+                            the products actually feel luxurious without
+                            being overpriced.
+                        </p>
+
+                        <div class="customer">
+
+                            <img src="https://i.pravatar.cc/100?img=32"
+                                alt="Customer">
+
+                            <div>
+                                <strong>Mehak Gupta</strong>
+
+                                <div class="rating">
+                                    ★★★★★
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 reveal">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p>
+                            I bought the Glow Ritual for my sister and
+                            ended up ordering one for myself. Absolutely
+                            beautiful products.
+                        </p>
+
+                        <div class="customer">
+
+                            <img src="https://i.pravatar.cc/100?img=44"
+                                alt="Customer">
+
+                            <div>
+                                <strong>Ananya Kapoor</strong>
+
+                                <div class="rating">
+                                    ★★★★★
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INSTAGRAM
+    ========================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <small>@ankitabeauty</small>
+
+                <h2>Beauty In Your Feed</h2>
+
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-lg-2 col-md-4 col-6 reveal">
+
+                    <div class="insta-card">
+
+                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=500&q=80">
+
+                        <div class="insta-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6 reveal">
+
+                    <div class="insta-card">
+
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=500&q=80">
+
+                        <div class="insta-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6 reveal">
+
+                    <div class="insta-card">
+
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80">
+
+                        <div class="insta-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6 reveal">
+
+                    <div class="insta-card">
+
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=500&q=80">
+
+                        <div class="insta-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6 reveal">
+
+                    <div class="insta-card">
+
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=500&q=80">
+
+                        <div class="insta-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6 reveal">
+
+                    <div class="insta-card">
+
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80">
+
+                        <div class="insta-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+
+    <section class="section-space">
+
+        <div class="container">
+
+            <div class="newsletter reveal">
+
+                <small style="color:#e94f87;font-weight:700;letter-spacing:2px;">
+                    STAY BEAUTIFUL
+                </small>
+
+                <h2>
+                    Get Beauty In Your Inbox
+                </h2>
+
+                <p>
+                    Subscribe for beauty tips, new launches,
+                    exclusive offers and more.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input type="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer id="contact">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+
+                    <div class="brand">
+                        <span class="logo-mark">A</span>
+                        Ankita
+                    </div>
+
+                    <p class="mt-4">
+                        Thoughtfully crafted beauty and skincare
+                        essentials created to celebrate your
+                        natural glow.
+                    </p>
+
+                    <div class="social mt-4">
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4">
+
+                    <h5>Shop</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Skincare</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Makeup</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lip Care</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Body Care</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Best Sellers</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-4">
+
+                    <h5>About</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Our Story</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Ingredients</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Journal</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-4">
+
+                    <h5>Customer Care</h5>
+
+                    <p>
+                        Need help with your order?
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        hello@ankitabeauty.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone me-2"></i>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        Monday – Saturday<br>
+                        10:00 AM – 6:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom text-center">
+
+                © 2026 Ankita Beauty. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        // Scroll Reveal Animation
+
+        const reveals = document.querySelectorAll(".reveal");
+
+        const revealOnScroll = () => {
+
+            reveals.forEach(element => {
+
+                const windowHeight = window.innerHeight;
+
+                const elementTop =
+                    element.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 80) {
+
+                    element.classList.add("active");
+
+                }
+
+            });
+
+        };
+
+        window.addEventListener("scroll", revealOnScroll);
+
+        window.addEventListener("load", revealOnScroll);
+
+
+        // Newsletter
+
+        document.querySelector(".newsletter-form")
+            .addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                alert("Thank you for subscribing to Ankita Beauty!");
+
+                this.reset();
+
+            });
+
+
+        // Wishlist
+
+        document.querySelectorAll(".product-wishlist")
+            .forEach(button => {
+
+                button.addEventListener("click", function () {
+
+                    const icon = this.querySelector("i");
+
+                    icon.classList.toggle("fa-regular");
+                    icon.classList.toggle("fa-solid");
+
+                });
+
+            });
+
+    </script>
+
+</body>
+
+</html>
