@@ -1,2 +1,2 @@
 # practice
-This is for the just practive
+This is for the just practice
